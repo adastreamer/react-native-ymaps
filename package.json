@@ -1,0 +1,59 @@
+{
+  "name": "react-native-ymaps",
+  "version": "0.1.0",
+  "description": "Yandex Maps react native js wrapper",
+  "main": "RNYMaps.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adastreamer/react-native-ymaps.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "yandex",
+    "maps",
+    "ymaps"
+  ],
+  "author": {
+    "name": "Eugene Khashin",
+    "email": "adastreamer@gmail.com",
+    "url": "https://github.com/adastreamer"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eventemitter3": "^1.1.0",
+    "react-native": "^0.11.4"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.5"
+  },
+  "gitHead": "",
+  "bugs": {
+    "url": "https://github.com/adastreamer/react-native-ymaps/issues"
+  },
+  "homepage": "https://github.com/adastreamer/react-native-ymaps#readme",
+  "_id": "react-native-ymaps@0.1.0",
+  "scripts": {},
+  "_shasum": "",
+  "_from": "react-native-ymaps@*",
+  "_npmVersion": "2.13.4",
+  "_nodeVersion": "0.10.35",
+  "_npmUser": {
+    "name": "adastreamer",
+    "email": "adastreamer@gmail.com"
+  },
+  "dist": {
+    "shasum": "",
+    "tarball": ""
+  },
+  "maintainers": [
+    {
+      "name": "adastreamer",
+      "email": "adastreamer@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": ""
+}
