@@ -28389,6 +28389,7 @@
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"\"$(SRCROOT)/../node_modules/react-native/React\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -28411,6 +28412,7 @@
 					"$(SRCROOT)/node_modules/react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"\"$(SRCROOT)/../node_modules/react-native/React\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
