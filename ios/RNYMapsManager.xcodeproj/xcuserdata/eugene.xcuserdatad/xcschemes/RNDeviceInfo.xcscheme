@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA5891D71BA9A9FC002B4DB2"
-               BuildableName = "libRNYMaps.a"
-               BlueprintName = "RNYMaps"
-               ReferencedContainer = "container:RNYMaps.xcodeproj">
+               BuildableName = "libRNYMapsManager.a"
+               BlueprintName = "RNYMapsManager"
+               ReferencedContainer = "container:RNYMapsManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA5891D71BA9A9FC002B4DB2"
-            BuildableName = "libRNYMaps.a"
-            BlueprintName = "RNYMaps"
-            ReferencedContainer = "container:RNYMaps.xcodeproj">
+            BuildableName = "libRNYMapsManager.a"
+            BlueprintName = "RNYMapsManager"
+            ReferencedContainer = "container:RNYMapsManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA5891D71BA9A9FC002B4DB2"
-            BuildableName = "libRNYMaps.a"
-            BlueprintName = "RNYMaps"
-            ReferencedContainer = "container:RNYMaps.xcodeproj">
+            BuildableName = "libRNYMapsManager.a"
+            BlueprintName = "RNYMapsManager"
+            ReferencedContainer = "container:RNYMapsManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

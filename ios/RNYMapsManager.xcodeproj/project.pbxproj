@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4474743C1BC1BEDE002A7C12 /* RNYMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 4474743B1BC1BEDE002A7C12 /* RNYMaps.m */; settings = {ASSET_TAGS = (); }; };
 		44ED056D1BC0B0170006F694 /* libtclsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ED056B1BC0AFEB0006F694 /* libtclsqlite3.dylib */; };
 		44ED056F1BC0B05C0006F694 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD58D1BC0AF340006F694 /* libxml2.2.dylib */; };
 		44ED05701BC0B0790006F694 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD5961BC0AF340006F694 /* libz.1.dylib */; };
@@ -23,8 +24,8 @@
 		44EDD4851BC0ACC00006F694 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD4841BC0ACC00006F694 /* QuartzCore.framework */; };
 		44EDD4871BC0ACC90006F694 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD4861BC0ACC90006F694 /* Security.framework */; };
 		44EDD4891BC0ACDC0006F694 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD4881BC0ACDC0006F694 /* SystemConfiguration.framework */; };
-		DA5891DC1BA9A9FC002B4DB2 /* RNYMaps.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA5891DB1BA9A9FC002B4DB2 /* RNYMaps.h */; };
-		DA5891DE1BA9A9FC002B4DB2 /* RNYMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5891DD1BA9A9FC002B4DB2 /* RNYMaps.m */; };
+		DA5891DC1BA9A9FC002B4DB2 /* RNYMapsManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA5891DB1BA9A9FC002B4DB2 /* RNYMapsManager.h */; };
+		DA5891DE1BA9A9FC002B4DB2 /* RNYMapsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,13 +35,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				DA5891DC1BA9A9FC002B4DB2 /* RNYMaps.h in CopyFiles */,
+				DA5891DC1BA9A9FC002B4DB2 /* RNYMapsManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4474743A1BC1BEDE002A7C12 /* RNYMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYMaps.h; sourceTree = "<group>"; };
+		4474743B1BC1BEDE002A7C12 /* RNYMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNYMaps.m; sourceTree = "<group>"; };
+		447474431BC1C06C002A7C12 /* RCTComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
 		44ED00001BC0AF850006F694 /* on_error-i.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "on_error-i.ri"; sourceTree = "<group>"; };
 		44ED00011BC0AF850006F694 /* parse-c.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "parse-c.ri"; sourceTree = "<group>"; };
 		44ED00021BC0AF850006F694 /* parse-i.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "parse-i.ri"; sourceTree = "<group>"; };
@@ -12095,9 +12099,9 @@
 		44EDFFFD1BC0AF850006F694 /* clear_cache-c.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clear_cache-c.ri"; sourceTree = "<group>"; };
 		44EDFFFE1BC0AF850006F694 /* new-c.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "new-c.ri"; sourceTree = "<group>"; };
 		44EDFFFF1BC0AF850006F694 /* next_token-i.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "next_token-i.ri"; sourceTree = "<group>"; };
-		DA5891D81BA9A9FC002B4DB2 /* libRNYMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNYMaps.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA5891DB1BA9A9FC002B4DB2 /* RNYMaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNYMaps.h; sourceTree = "<group>"; };
-		DA5891DD1BA9A9FC002B4DB2 /* RNYMaps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNYMaps.m; sourceTree = "<group>"; };
+		DA5891D81BA9A9FC002B4DB2 /* libRNYMapsManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNYMapsManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5891DB1BA9A9FC002B4DB2 /* RNYMapsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNYMapsManager.h; sourceTree = "<group>"; };
+		DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNYMapsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28217,7 +28221,7 @@
 				44EDD46E1BC0ABDA0006F694 /* OpenAL.framework */,
 				44EDD46C1BC0ABBD0006F694 /* AudioToolbox.framework */,
 				44EDD44A1BC0AA250006F694 /* YandexMapKit */,
-				DA5891DA1BA9A9FC002B4DB2 /* RNYMaps */,
+				DA5891DA1BA9A9FC002B4DB2 /* RNYMapsManager */,
 				DA5891D91BA9A9FC002B4DB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -28225,26 +28229,29 @@
 		DA5891D91BA9A9FC002B4DB2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA5891D81BA9A9FC002B4DB2 /* libRNYMaps.a */,
+				DA5891D81BA9A9FC002B4DB2 /* libRNYMapsManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA5891DA1BA9A9FC002B4DB2 /* RNYMaps */ = {
+		DA5891DA1BA9A9FC002B4DB2 /* RNYMapsManager */ = {
 			isa = PBXGroup;
 			children = (
-				DA5891DB1BA9A9FC002B4DB2 /* RNYMaps.h */,
-				DA5891DD1BA9A9FC002B4DB2 /* RNYMaps.m */,
+				447474431BC1C06C002A7C12 /* RCTComponent.h */,
+				4474743A1BC1BEDE002A7C12 /* RNYMaps.h */,
+				4474743B1BC1BEDE002A7C12 /* RNYMaps.m */,
+				DA5891DB1BA9A9FC002B4DB2 /* RNYMapsManager.h */,
+				DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */,
 			);
-			path = RNYMaps;
+			path = RNYMapsManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA5891D71BA9A9FC002B4DB2 /* RNYMaps */ = {
+		DA5891D71BA9A9FC002B4DB2 /* RNYMapsManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA5891E11BA9A9FC002B4DB2 /* Build configuration list for PBXNativeTarget "RNYMaps" */;
+			buildConfigurationList = DA5891E11BA9A9FC002B4DB2 /* Build configuration list for PBXNativeTarget "RNYMapsManager" */;
 			buildPhases = (
 				DA5891D41BA9A9FC002B4DB2 /* Sources */,
 				DA5891D51BA9A9FC002B4DB2 /* Frameworks */,
@@ -28254,9 +28261,9 @@
 			);
 			dependencies = (
 			);
-			name = RNYMaps;
+			name = RNYMapsManager;
 			productName = RNDeviceInfo;
-			productReference = DA5891D81BA9A9FC002B4DB2 /* libRNYMaps.a */;
+			productReference = DA5891D81BA9A9FC002B4DB2 /* libRNYMapsManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -28273,7 +28280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA5891D31BA9A9FC002B4DB2 /* Build configuration list for PBXProject "RNYMaps" */;
+			buildConfigurationList = DA5891D31BA9A9FC002B4DB2 /* Build configuration list for PBXProject "RNYMapsManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -28285,7 +28292,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA5891D71BA9A9FC002B4DB2 /* RNYMaps */,
+				DA5891D71BA9A9FC002B4DB2 /* RNYMapsManager */,
 			);
 		};
 /* End PBXProject section */
@@ -28295,7 +28302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5891DE1BA9A9FC002B4DB2 /* RNYMaps.m in Sources */,
+				4474743C1BC1BEDE002A7C12 /* RNYMaps.m in Sources */,
+				DA5891DE1BA9A9FC002B4DB2 /* RNYMapsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28398,7 +28406,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = "-all_load";
-				PRODUCT_NAME = RNYMaps;
+				PRODUCT_NAME = RNYMapsManager;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -28421,7 +28429,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = all_load;
-				PRODUCT_NAME = RNYMaps;
+				PRODUCT_NAME = RNYMapsManager;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -28429,7 +28437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA5891D31BA9A9FC002B4DB2 /* Build configuration list for PBXProject "RNYMaps" */ = {
+		DA5891D31BA9A9FC002B4DB2 /* Build configuration list for PBXProject "RNYMapsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA5891DF1BA9A9FC002B4DB2 /* Debug */,
@@ -28438,7 +28446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA5891E11BA9A9FC002B4DB2 /* Build configuration list for PBXNativeTarget "RNYMaps" */ = {
+		DA5891E11BA9A9FC002B4DB2 /* Build configuration list for PBXNativeTarget "RNYMapsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA5891E21BA9A9FC002B4DB2 /* Debug */,
