@@ -4,13 +4,13 @@
 #import "RCTConvert+MapKit.h"
 #import "RCTComponent.h"
 
-//#import "YandexMapKit.h"
+#import "YandexMapKit.h"
 
 extern const CLLocationDegrees RNYMapsDefaultSpan;
 extern const NSTimeInterval RNYMapsRegionChangeObserveInterval;
 extern const CGFloat RNYMapsZoomBoundBuffer;
 
-@interface RNYMaps: MKMapView
+@interface RNYMaps: YMKMapView
 
 @property (nonatomic, assign) BOOL followUserLocation;
 @property (nonatomic, assign) BOOL hasStartedRendering;
@@ -22,7 +22,5 @@ extern const CGFloat RNYMapsZoomBoundBuffer;
 
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;
 @property (nonatomic, copy) RCTBubblingEventBlock onPress;
-
-- (void)setAnnotations:(RCTPointAnnotationArray *)annotations;
 
 @end
