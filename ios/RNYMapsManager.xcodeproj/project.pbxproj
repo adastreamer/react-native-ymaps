@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4474743C1BC1BEDE002A7C12 /* RNYMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 4474743B1BC1BEDE002A7C12 /* RNYMaps.m */; settings = {ASSET_TAGS = (); }; };
 		44ED056D1BC0B0170006F694 /* libtclsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ED056B1BC0AFEB0006F694 /* libtclsqlite3.dylib */; };
 		44ED056F1BC0B05C0006F694 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD58D1BC0AF340006F694 /* libxml2.2.dylib */; };
 		44ED05701BC0B0790006F694 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD5961BC0AF340006F694 /* libz.1.dylib */; };
@@ -42,8 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4474743A1BC1BEDE002A7C12 /* RNYMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYMaps.h; sourceTree = "<group>"; };
-		4474743B1BC1BEDE002A7C12 /* RNYMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNYMaps.m; sourceTree = "<group>"; };
 		447474431BC1C06C002A7C12 /* RCTComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
 		44ED00001BC0AF850006F694 /* on_error-i.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "on_error-i.ri"; sourceTree = "<group>"; };
 		44ED00011BC0AF850006F694 /* parse-c.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "parse-c.ri"; sourceTree = "<group>"; };
@@ -28238,8 +28235,6 @@
 			isa = PBXGroup;
 			children = (
 				447474431BC1C06C002A7C12 /* RCTComponent.h */,
-				4474743A1BC1BEDE002A7C12 /* RNYMaps.h */,
-				4474743B1BC1BEDE002A7C12 /* RNYMaps.m */,
 				DA5891DB1BA9A9FC002B4DB2 /* RNYMapsManager.h */,
 				DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */,
 			);
@@ -28302,7 +28297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4474743C1BC1BEDE002A7C12 /* RNYMaps.m in Sources */,
 				DA5891DE1BA9A9FC002B4DB2 /* RNYMapsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

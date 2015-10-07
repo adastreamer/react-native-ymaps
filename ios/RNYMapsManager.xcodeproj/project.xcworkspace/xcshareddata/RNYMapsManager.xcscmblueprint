@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "053A0E1DD2B2B6F8B54B4D06402D2F46FC05747B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "053A0E1DD2B2B6F8B54B4D06402D2F46FC05747B" : 0,
+    "4729A1B604C2FA42776E32F501ED93DBCB1ADC21" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D09DCF62-8FC9-4CDB-89BC-DB17E2837B62",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "053A0E1DD2B2B6F8B54B4D06402D2F46FC05747B" : "react-native-ymaps\/",
+    "4729A1B604C2FA42776E32F501ED93DBCB1ADC21" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNYMapsManager",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/RNYMapsManager.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:adastreamer\/react-native-ymaps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "053A0E1DD2B2B6F8B54B4D06402D2F46FC05747B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Online-Lab\/taxi-layout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4729A1B604C2FA42776E32F501ED93DBCB1ADC21"
+    }
+  ]
+}

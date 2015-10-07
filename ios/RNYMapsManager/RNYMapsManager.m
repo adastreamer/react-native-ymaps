@@ -17,6 +17,9 @@
 
 
 static NSString *const RNYMapsViewKey = @"YMapView";
+static YMKMapView *map;
+
+
 
 @implementation RNYMapsManager
 
@@ -28,13 +31,18 @@ RCT_EXPORT_MODULE()
     [YMKConfiguration sharedInstance].apiKey = @"AvwcIwixF7APTvAOC6j9KbbzqNANVAh1SmjZplh~3EKmQVbJCp41qHR6djmVLmoSG6vjY8MdfBtXCgo6aHstSpTO9Zo-RTzaXDiJHqg5-H8=";
 
     
-    YMKMapView *map = [YMKMapView new];
+    map = [YMKMapView new];
+    
+//    CGRect screenRect = [[UIScreen mainScreen] bounds];
+//    CGFloat screenWidth = screenRect.size.width;
+//    CGFloat screenHeight = screenRect.size.height;
     
     
     
     CGRect cgrect;
-    cgrect.size.height = 200;
-    cgrect.size.width = 300;
+
+    cgrect.size.height = 100;
+    cgrect.size.width = 100;
     
     map.frame = cgrect;
 
