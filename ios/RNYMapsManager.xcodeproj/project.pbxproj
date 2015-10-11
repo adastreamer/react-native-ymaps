@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356D41761BCAB3D80046CFAD /* YMKMapView+RNCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 356D41751BCAB3D80046CFAD /* YMKMapView+RNCategory.m */; settings = {ASSET_TAGS = (); }; };
 		44ED056D1BC0B0170006F694 /* libtclsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44ED056B1BC0AFEB0006F694 /* libtclsqlite3.dylib */; };
 		44ED056F1BC0B05C0006F694 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD58D1BC0AF340006F694 /* libxml2.2.dylib */; };
 		44ED05701BC0B0790006F694 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EDD5961BC0AF340006F694 /* libz.1.dylib */; };
@@ -41,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		356D41741BCAB3D80046CFAD /* YMKMapView+RNCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMKMapView+RNCategory.h"; sourceTree = "<group>"; };
+		356D41751BCAB3D80046CFAD /* YMKMapView+RNCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMKMapView+RNCategory.m"; sourceTree = "<group>"; };
 		447474431BC1C06C002A7C12 /* RCTComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
 		44ED00001BC0AF850006F694 /* on_error-i.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "on_error-i.ri"; sourceTree = "<group>"; };
 		44ED00011BC0AF850006F694 /* parse-c.ri */ = {isa = PBXFileReference; lastKnownFileType = file; path = "parse-c.ri"; sourceTree = "<group>"; };
@@ -28237,6 +28240,8 @@
 				447474431BC1C06C002A7C12 /* RCTComponent.h */,
 				DA5891DB1BA9A9FC002B4DB2 /* RNYMapsManager.h */,
 				DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */,
+				356D41741BCAB3D80046CFAD /* YMKMapView+RNCategory.h */,
+				356D41751BCAB3D80046CFAD /* YMKMapView+RNCategory.m */,
 			);
 			path = RNYMapsManager;
 			sourceTree = "<group>";
@@ -28298,6 +28303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5891DE1BA9A9FC002B4DB2 /* RNYMapsManager.m in Sources */,
+				356D41761BCAB3D80046CFAD /* YMKMapView+RNCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
