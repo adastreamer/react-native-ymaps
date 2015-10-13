@@ -43,9 +43,3 @@ typedef void (^RCTBubblingEventBlock)(NSDictionary *body);
 
 @end
 
-// TODO: this is kinda dumb - let's come up with a
-// better way of identifying root React views please!
-static inline BOOL RCTIsReactRootView(NSNumber *reactTag)
-{
-  return reactTag.integerValue % 10 == 1;
-}

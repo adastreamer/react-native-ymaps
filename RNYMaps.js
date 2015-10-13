@@ -2,8 +2,9 @@
  * @providesModule react-native-ymaps
  */
 
-var { RNYMaps } = require('react-native').NativeModules;
+var { requireNativeComponent } = require('react-native');
 
-module.exports = {
+module.exports = requireNativeComponent('RNYMaps', null);
 
-};
+
+//var { RNYMaps } = require('react-native').NativeModules;
