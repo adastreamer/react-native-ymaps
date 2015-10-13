@@ -12,6 +12,7 @@
 #import "UIView+React.h"
 #import "RCTPointAnnotation.h"
 
+#import "Definitions.h"
 #import "YandexMapKit.h"
 #import "YMKMapView+RNCategory.h"
 
@@ -24,7 +25,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-    [YMKConfiguration sharedInstance].apiKey = @"AvwcIwixF7APTvAOC6j9KbbzqNANVAh1SmjZplh~3EKmQVbJCp41qHR6djmVLmoSG6vjY8MdfBtXCgo6aHstSpTO9Zo-RTzaXDiJHqg5-H8=";
+    [YMKConfiguration sharedInstance].apiKey = YMAPS_API_KEY;
     map = [YMKMapView new];
     return map;
 }
