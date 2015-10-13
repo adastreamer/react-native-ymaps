@@ -10,4 +10,7 @@
 
 @interface YMKMapView (RNCategory)
 
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+
 @end
