@@ -8,7 +8,31 @@
 
 #import "YMKMapView+RNCategory.h"
 
+@interface YMKMapView() <CLLocationManagerDelegate>
+
+@end
+
 @implementation YMKMapView (RNCategory)
+
+CLLocationManager *_locationManager;
+
+CGFloat _atZoomLevel;
+
+// atZoomLevel getter/setter
+- (CGFloat)atZoomLevel {
+    return _atZoomLevel;
+}
+- (void)setAtZoomLevel:(CGFloat)newZoomLevel{
+    _atZoomLevel = newZoomLevel;
+}
+
+// showTraffic getter/setter
+- (BOOL)showTraffic {
+    return self.showTraffic;
+}
+- (void)setShowTraffic:(BOOL)showTraffic{
+    self.showTraffic = showTraffic;
+}
 
 /* SIZES FEATURE */
 // width getter/setter
@@ -32,5 +56,33 @@
     self.frame = cgrect;
 }
 /**/
+// followUserLocation getter/setter
+- (BOOL)showUserLocation {
+    return self.frame.size.height;
+}
+- (void)setShowUserLocation:(BOOL)showUserLocation{
+    if (showUserLocation) {
+        [self setShowsUserLocation:true];
+        [self setTracksUserLocation:true];
+        _locationManager = [[CLLocationManager alloc] init];
+        [_locationManager setDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
+        [_locationManager setDelegate:self];
+        [_locationManager startUpdatingLocation];
+    }
+}
+/**/
+
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *newLocation = [locations lastObject];
+    YMKMapRegion region;
+    region.center = newLocation.coordinate;
+    [self setCenterCoordinate:newLocation.coordinate atZoomLevel:_atZoomLevel animated:YES];
+    [manager stopUpdatingLocation];
+}
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"Cannot find the location.");
+}
 
 @end

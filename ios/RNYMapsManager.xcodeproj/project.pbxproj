@@ -42,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3567DA611BCD45F6005325B6 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 		356D41741BCAB3D80046CFAD /* YMKMapView+RNCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMKMapView+RNCategory.h"; sourceTree = "<group>"; };
 		356D41751BCAB3D80046CFAD /* YMKMapView+RNCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMKMapView+RNCategory.m"; sourceTree = "<group>"; };
 		447474431BC1C06C002A7C12 /* RCTComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
@@ -28242,6 +28243,7 @@
 				DA5891DD1BA9A9FC002B4DB2 /* RNYMapsManager.m */,
 				356D41741BCAB3D80046CFAD /* YMKMapView+RNCategory.h */,
 				356D41751BCAB3D80046CFAD /* YMKMapView+RNCategory.m */,
+				3567DA611BCD45F6005325B6 /* Definitions.h */,
 			);
 			path = RNYMapsManager;
 			sourceTree = "<group>";
