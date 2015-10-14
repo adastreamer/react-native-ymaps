@@ -72,12 +72,12 @@ CGFloat _atZoomLevel;
 }
 /**/
 
+// helpers
+
 #pragma mark CLLocationManagerDelegate
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *newLocation = [locations lastObject];
-    YMKMapRegion region;
-    region.center = newLocation.coordinate;
     [self setCenterCoordinate:newLocation.coordinate atZoomLevel:_atZoomLevel animated:YES];
     [manager stopUpdatingLocation];
 }

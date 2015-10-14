@@ -34,6 +34,7 @@ RCT_EXPORT_MODULE()
 }
 
 - (void)mapView:(YMKMapView *)mapView didUpdateUserLocation:(YMKUserLocation *)userLocation {
+    [map setCenterCoordinate:userLocation.coordinate atZoomLevel:[map atZoomLevel] animated:YES];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(width, CGFloat)
