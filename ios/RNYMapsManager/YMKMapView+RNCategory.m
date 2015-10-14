@@ -9,13 +9,11 @@
 #import "YMKMapView+RNCategory.h"
 
 @interface YMKMapView() <CLLocationManagerDelegate>
-
 @end
 
 @implementation YMKMapView (RNCategory)
 
 CLLocationManager *_locationManager;
-
 CGFloat _atZoomLevel;
 
 // atZoomLevel getter/setter
@@ -25,6 +23,7 @@ CGFloat _atZoomLevel;
 - (void)setAtZoomLevel:(CGFloat)newZoomLevel{
     _atZoomLevel = newZoomLevel;
 }
+/**/
 
 // showTraffic getter/setter
 - (BOOL)showTraffic {
@@ -33,8 +32,8 @@ CGFloat _atZoomLevel;
 - (void)setShowTraffic:(BOOL)showTraffic{
     self.showTraffic = showTraffic;
 }
+/**/
 
-/* SIZES FEATURE */
 // width getter/setter
 - (CGFloat)width {
     return self.frame.size.width;
@@ -45,6 +44,8 @@ CGFloat _atZoomLevel;
     cgrect.size.width = newWidth;
     self.frame = cgrect;
 }
+/**/
+
 // height getter/setter
 - (CGFloat)height {
     return self.frame.size.height;
@@ -56,6 +57,7 @@ CGFloat _atZoomLevel;
     self.frame = cgrect;
 }
 /**/
+
 // followUserLocation getter/setter
 - (BOOL)showUserLocation {
     return self.frame.size.height;
@@ -72,6 +74,7 @@ CGFloat _atZoomLevel;
 }
 /**/
 
+#pragma mark CLLocationManagerDelegate
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *newLocation = [locations lastObject];

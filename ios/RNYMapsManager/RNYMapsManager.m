@@ -20,7 +20,6 @@ static NSString *const RNYMapsViewKey = @"YMapView";
 static YMKMapView *map;
 
 @interface RNYMapsManager() <YMKMapViewDelegate>
-
 @end
 
 @implementation RNYMapsManager
