@@ -19,6 +19,10 @@
 static NSString *const RNYMapsViewKey = @"YMapView";
 static YMKMapView *map;
 
+@interface RNYMapsManager() <YMKMapViewDelegate>
+
+@end
+
 @implementation RNYMapsManager
 
 RCT_EXPORT_MODULE()
@@ -27,10 +31,15 @@ RCT_EXPORT_MODULE()
 {
     [YMKConfiguration sharedInstance].apiKey = YMAPS_API_KEY;
     map = [YMKMapView new];
+    [map setDelegate:self];
     return map;
+}
+
+- (void)mapView:(YMKMapView *)mapView didUpdateUserLocation:(YMKUserLocation *)userLocation{
 }
 
 RCT_EXPORT_VIEW_PROPERTY(width, CGFloat)
 RCT_EXPORT_VIEW_PROPERTY(height, CGFloat)
+RCT_EXPORT_VIEW_PROPERTY(showUserLocation, BOOL)
 
 @end
