@@ -26,6 +26,14 @@ CGFloat _atZoomLevel;
     _atZoomLevel = newZoomLevel;
 }
 
+// showTraffic getter/setter
+- (BOOL)showTraffic {
+    return self.showTraffic;
+}
+- (void)setShowTraffic:(BOOL)showTraffic{
+    self.showTraffic = showTraffic;
+}
+
 /* SIZES FEATURE */
 // width getter/setter
 - (CGFloat)width {
