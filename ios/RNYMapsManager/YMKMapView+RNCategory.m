@@ -16,6 +16,16 @@
 
 CLLocationManager *_locationManager;
 
+CGFloat _atZoomLevel;
+
+// atZoomLevel getter/setter
+- (CGFloat)atZoomLevel {
+    return _atZoomLevel;
+}
+- (void)setAtZoomLevel:(CGFloat)newZoomLevel{
+    _atZoomLevel = newZoomLevel;
+}
+
 /* SIZES FEATURE */
 // width getter/setter
 - (CGFloat)width {
@@ -46,14 +56,11 @@ CLLocationManager *_locationManager;
     if (showUserLocation) {
         [self setShowsUserLocation:true];
         [self setTracksUserLocation:true];
-    }
-    if (_locationManager == nil)
-    {
         _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-        _locationManager.delegate = self;
+        [_locationManager setDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
+        [_locationManager setDelegate:self];
+        [_locationManager startUpdatingLocation];
     }
-    [_locationManager startUpdatingLocation];
 }
 /**/
 
@@ -62,8 +69,8 @@ CLLocationManager *_locationManager;
     CLLocation *newLocation = [locations lastObject];
     YMKMapRegion region;
     region.center = newLocation.coordinate;
-    [self setCenterCoordinate:newLocation.coordinate atZoomLevel:16 animated:YES];
-    // [manager stopUpdatingLocation];
+    [self setCenterCoordinate:newLocation.coordinate atZoomLevel:_atZoomLevel animated:YES];
+    [manager stopUpdatingLocation];
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
