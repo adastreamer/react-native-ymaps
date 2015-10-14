@@ -20,7 +20,7 @@ CGFloat _atZoomLevel;
 - (CGFloat)atZoomLevel {
     return _atZoomLevel;
 }
-- (void)setAtZoomLevel:(CGFloat)newZoomLevel{
+- (void)setAtZoomLevel:(CGFloat)newZoomLevel {
     _atZoomLevel = newZoomLevel;
 }
 /**/
@@ -29,7 +29,7 @@ CGFloat _atZoomLevel;
 - (BOOL)showTraffic {
     return self.showTraffic;
 }
-- (void)setShowTraffic:(BOOL)showTraffic{
+- (void)setShowTraffic:(BOOL)showTraffic {
     self.showTraffic = showTraffic;
 }
 /**/
@@ -38,8 +38,7 @@ CGFloat _atZoomLevel;
 - (CGFloat)width {
     return self.frame.size.width;
 }
-- (void)setWidth:(CGFloat)newWidth{
-    NSLog(@"init width");
+- (void)setWidth:(CGFloat)newWidth {
     CGRect cgrect = self.frame;
     cgrect.size.width = newWidth;
     self.frame = cgrect;
@@ -50,8 +49,7 @@ CGFloat _atZoomLevel;
 - (CGFloat)height {
     return self.frame.size.height;
 }
-- (void)setHeight:(CGFloat)newHeight{
-    NSLog(@"init height");
+- (void)setHeight:(CGFloat)newHeight {
     CGRect cgrect = self.frame;
     cgrect.size.height = newHeight;
     self.frame = cgrect;
@@ -62,7 +60,7 @@ CGFloat _atZoomLevel;
 - (BOOL)showUserLocation {
     return self.frame.size.height;
 }
-- (void)setShowUserLocation:(BOOL)showUserLocation{
+- (void)setShowUserLocation:(BOOL)showUserLocation {
     if (showUserLocation) {
         [self setShowsUserLocation:true];
         [self setTracksUserLocation:true];
@@ -83,9 +81,7 @@ CGFloat _atZoomLevel;
     [self setCenterCoordinate:newLocation.coordinate atZoomLevel:_atZoomLevel animated:YES];
     [manager stopUpdatingLocation];
 }
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"Cannot find the location.");
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
 }
 
 @end

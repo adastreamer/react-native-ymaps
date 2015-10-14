@@ -26,15 +26,14 @@ static YMKMapView *map;
 
 RCT_EXPORT_MODULE()
 
-- (UIView *)view
-{
+- (UIView *)view {
     [YMKConfiguration sharedInstance].apiKey = YMAPS_API_KEY;
     map = [YMKMapView new];
     [map setDelegate:self];
     return map;
 }
 
-- (void)mapView:(YMKMapView *)mapView didUpdateUserLocation:(YMKUserLocation *)userLocation{
+- (void)mapView:(YMKMapView *)mapView didUpdateUserLocation:(YMKUserLocation *)userLocation {
 }
 
 RCT_EXPORT_VIEW_PROPERTY(width, CGFloat)
